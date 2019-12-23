@@ -1,0 +1,42 @@
+Vineetkumar Sharma 
+
+//Program to reverse the given string
+
+import java.lang.*; 
+import java.io.*; 
+import java.util.*; 
+
+public class Reverseastring 
+{ 
+	public static void main(String[] args) 
+	{ 
+		String test = "abcde"; 
+
+		char[] a = test.toCharArray(); 
+
+		for (int i = a.length-1; i>=0; i--) 
+			System.out.print(a[i]); 
+       
+        // Total numbers of Vowel 
+        System.out.println(countVowels(test)); 
+    }
+		 boolean isVowel(char[] a) 
+    { 
+        ch = Character.toUpperCase(ch); 
+        return (ch=='A' || ch=='E' || ch=='I' || 
+                           ch=='O' || ch=='U'); 
+    } 
+       
+    // Returns count of vowels in test
+    int countVowels(String test) 
+    { 
+        int count = 0; 
+        for (int j = 0; j < str.length(); j++) 
+            if (isVowel(str.charAt(j))) // Check for vowel 
+                ++count; 
+        return count; 
+    } 
+      
+ 
+
+} 
